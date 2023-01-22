@@ -1,0 +1,199 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Raleway', sans-serif;
+        }
+        h1{
+            font-family: 'Michroma', sans-serif;
+            line-height: 60px;
+        }
+        p{
+            
+            line-height: 34px;
+            color:#777C85 !important;
+        }
+        a{
+            text-decoration: none;
+            color:#777C85 !important;
+
+        }
+        nav{
+           display: flex;
+           justify-content: space-around;
+           align-items:center;
+           height: 120px;
+          position: sticky;
+          top: 0;
+          background-color: white;
+        }
+        nav .logo{
+            width: 98px !important;
+            height: 82px !important;
+            display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        nav .logo figure img{
+            object-fit: contain;
+            height: inherit;
+        }
+        nav ul li{
+            display: inline;
+            padding: 0px 20px;
+        }
+        nav ul li a{
+           font-weight: 600;
+            color: black;
+        }
+        nav ul li a:hover{
+            padding-bottom: 10px;
+            color:#4E5DC0 !important;
+            border-bottom: 2px solid #4E5DC0;;
+       }
+       #team{
+        color:#4E5DC0 !important;
+       }
+        
+        nav button{
+            border: none;
+            padding: 10px 20px;
+            background-color: #4E5DC0;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+
+        }
+        main .team-codehelp , .founder{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 10vh auto;
+            padding:0px 20vh;
+        }
+        .section-1-content{
+            padding-right: 100px;
+        }
+        .section-2-content{
+            padding-left: 200px;
+        }
+        .section-1-content p{
+            padding-right: 100px;
+            padding-top: 20px;
+        }
+        .section-2-content p{
+            padding-top: 20px;
+            padding-right: 150px;
+        }
+        footer{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            padding:10vh;
+        }
+        footer .footer-col{
+            width: 25%;
+            padding: 0px 10vh;
+        }
+        footer ul li ,footer ul li a{
+            text-decoration: none;
+            list-style: none;
+            color: black;
+            padding-bottom: 10px;
+        }
+        .social-icons li, .social-icons li a{
+            padding-bottom: 0px !important;
+        }
+        .social-icons{
+            display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        .social-icons li {
+            display: flex;
+           justify-content: center !important;
+           align-items: center !important;
+            width: 50px;
+            height: 50px;
+          
+            background-color: #4E5DC0;
+            border-radius: 50%;
+            margin: 5px;
+        }
+        footer h4 , footer #privacy-policy{
+            color: #4E5DC0 !important;
+        }
+        footer #privacy-policy{
+            text-decoration: underline !important;
+        }
+        footer .menu li a:hover{
+            color: #4E5DC0 !important;
+        }
+        hr{
+            color: grey;
+            border: none;
+            border-bottom: 2px solid grey;
+        }
+
+
+
+      /* FOR RESPONSIVE CODE */ 
+      @media screen and (max-width:1300px){
+        main .team-codehelp, .founder{
+            flex-direction: column;
+            padding: 0px 5vh;
+            margin: 5vh auto;
+        }
+        .founder {
+    flex-direction: column-reverse !important;
+        }
+        .section-1-content p , .section-1-content , .section-2-content p{
+    padding-right: 0px;
+      }
+      .section-2-content{
+        padding-left: 0px;
+      }
+      .team-codehelp figure , .founder figure{
+        padding-top: 50px;
+        width: 100%;
+      }
+      footer .footer-col{
+            width: 50%;
+      }
+      footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10vh 5vh;
+}
+    }
+
+    @media screen and (max-width:600px){
+        nav {
+   justify-content: space-between;
+    padding: 0 2rem;
+    height: 70px;
+}
+        .team-codehelp figure img, .founder figure img{
+      width: 100%;
+      }
+      footer .footer-col{
+            width: 100%;
+            padding: 0px 5vh;
+      }
+      footer{
+        min-height: 150vh;
+        padding: 0px;
+      }
+      nav ul{
+        display: none;
+      }
+      nav .logo , nav .logo figure img{
+    width: 50px !important;
+    height: 50px !important;
+    }

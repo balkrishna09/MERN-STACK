@@ -1,0 +1,31 @@
+/* *{
+    margin:0;
+    box-sizing: border-box;
+} */
+container{
+    display: flex;
+    height: 100vh;
+    width:100vh;
+    /* display:grid; */
+    /* grid-template-columns: auto auto auto; */
+    /* grid-template-rows: auto; */
+    /* grid-gap:10px */
+    /* padding :10px; */
+    /* background-color:blue; */
+
+}
+
+.gg{
+    height: 100%;
+    width: 100px;
+    object-fit: cover;
+    
+}
+
+.container{
+    height: 400px;
+    width: 400px;
+    background-image:linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url(mug.jpg);
+    background-size: cover;
+
+} */
