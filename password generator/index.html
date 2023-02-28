@@ -13,9 +13,9 @@
             <h1 id="pass_gen">PASSWORD GENERATOR</h1>
             <div class="copy">
                 <input readonly placeholder="Password" class="display_password">
-                <button class="data-copy">
-                    <span data-copyMsg></span>
-                    <img src="./assets/copy.svg" alt="copy" width="23" height="23">
+                <button class="data-copy copyBtn">
+                    <span class="copy-text"></span>
+                    <img src="./assets/copy.svg" alt="copy" width="23" height="23" >
                 </button>
             </div>
 
@@ -30,22 +30,22 @@
                 <input type="range" min="1" max="20" class="slider dataLengthSlider" step="1" >
                 
                 <!--boxes-->
-                <div>
+                <div class="check">
                     <input type="checkbox" class="uppercase">
                     <label for="uppercase"> Includes Uppercase letters</label>
                 </div>
 
-                <div>
+                <div class="check">
                     <input type="checkbox" class="lowercase">
                     <label for="lowercase"> Includes Lowercase letters</label>
                 </div>
 
-                <div>
+                <div class="check">
                     <input type="checkbox" class="numbers">
                     <label for="numbers"> Includes Numbers</label>
                 </div>
 
-                <div>
+                <div class="check">
                     <input type="checkbox" class="symbols">
                     <label for="symbols"> Includes Symbols</label>
                 </div>
