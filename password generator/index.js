@@ -119,6 +119,7 @@ allCheckBox.forEach((checkbox)=>{
 
 
 generateBtn.addEventListener("click",()=>{
+    copyMsg.innerText = "";
     //none checkbox ticked
     if(checkCount <=0) return;
 
