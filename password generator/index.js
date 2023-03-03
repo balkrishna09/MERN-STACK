@@ -15,6 +15,7 @@ const symbols = '~`!@#$%^&*()_-+={[}]|:;"<,>.?/';
 let password ="";
 let passwordLength = 10;
 let checkCount = 0;
+upperCase.checked = true;
 handleSlider();
 setIndicator("#ccc");
 
@@ -66,14 +67,14 @@ function calcStrength(){
     if(symbol.checked) hasSymbol = true;
     if(number.checked) hasNumber = true;
 
-    if(hasUpper && hasLower && (hasNumber||hasSymbol)){
+    if(hasUpper && hasLower && (hasNumber||hasSymbol)&& passwordLength>=8){
         setIndicator("#0f0");
     }
     else if((hasLower || hasUpper)&&(hasNumber || hasSymbol) && passwordLength >=6){
-        setIndicator("ff0");
+        setIndicator("#ff0");
     }
     else{
-        setIndicator("0f00");
+        setIndicator("#f00");
     }
 }
 
@@ -149,7 +150,7 @@ generateBtn.addEventListener("click",()=>{
     //     password += generateSymbols();
     // }
 
-    var funcArr = [];
+    let funcArr = [];
     if(upperCase.checked){
         funcArr.push(generateUpperCase);
     }
@@ -176,12 +177,13 @@ generateBtn.addEventListener("click",()=>{
 
     //shuffle password
     password = shufflePassword(Array.from(password)); 
-    console.log(password);
+    // console.log(password);
 
     //show in UI
     passwordDisplay.value = password;
 
     // calcStrength();
+    calcStrength();
 
 });
 

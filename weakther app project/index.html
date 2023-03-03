@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Weather App</h1>
+
+        <!-- choose tab -->
+        <div class="tabContainer">
+            <p class="tab1">Your Weather</p>
+            <p class="tab2">Search weather</p>
+
+            <div class="weatherContainer">
+
+                <!-- grant location -->
+                <div class="grantLocation">
+                    <img src="./assets/location.png" width="80" height="80" alt="" loading="lazy">
+                    <p>Grant Locaiton Access</p>
+                    <p>Allow Access to get weather information</p>
+                    <button class="btn">Grant Access</button>
+                </div>
+
+                <!-- search form -->
+                <form class="formContainer">
+                    <input type="text" placeholder="Search for city....">
+                    <button class="btn">
+                        <img src="./assets/search.png" width="20" height="20" alt="" loading="lazy">
+                    </button>
+                </form>
+
+                <!-- loading screen container -->
+                <div class="loadingContainer">
+                    <img src="./assets/loading.gif" alt="" height="150" width="150">
+                    <p>Loading...</p>
+                </div>
+
+                <!-- weather information UI -->
+                <div class="weatherinfo">
+                    <div class="name">
+                        <p class="cityName"></p>
+                        <img class="countryIcon">
+                    </div>
+
+                    <!-- city name and flag -->
+                    <p class="weaterDesc"></p>
+                    <!-- weather icon -->
+                    <img class="weatherIcon">
+                    <!-- temperature -->
+                    <h2 class="temp"></h2>
+
+                    <div class="tempParameter">
+
+                        <!-- card1 -->
+                        <div class="parameter">
+                            <img src="./assets/wind.png" alt="">
+                            <p>windspeed</p>
+                            <p class="dataWindspeed"></p>
+                        </div>
+
+                        <!-- card2 -->
+                        <div class="parameter">
+                            <img src="./assets/humidity.png" alt="">
+                            <p>humidity</p>
+                            <p> class=dataHumidity</p>
+                        </div>
+
+                        <!-- card3 -->
+                        <div class="parameter">
+                            <img src="./assets/cloud.png" alt="">
+                            <p>clouds</p>
+                            <p class="cloudData"></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    
+    <script src="index.js"></script>
+</body>
+</html>

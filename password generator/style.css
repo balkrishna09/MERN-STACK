@@ -260,3 +260,23 @@
     box-shadow: 0px 0px 25px 5px rgba(255, 229, 61, 0.80);
 }
 
+.copy-text {
+    position: absolute;
+    background-color: var(--vb-violet2);
+    color: var(--vb-yellow);
+    font-size: 1.25rem;
+    top: -35px;
+    left: -25px;
+    padding: 5px 10px;
+    border-radius: 1rem;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: bottom;
+    transition: all 250ms ease-in-out;
+  }
+  
+  .copy-text.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+
