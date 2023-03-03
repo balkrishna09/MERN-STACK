@@ -10,3 +10,5 @@ https://balkrishna09.github.io/MERN-STACK/blog/
 https://balkrishna09.github.io/MERN-STACK/card/
 
 https://balkrishna09.github.io/MERN-STACK/AnimatedButton/
+
+https://balkrishna09.github.io/MERN-STACK/passwordGenerator/
