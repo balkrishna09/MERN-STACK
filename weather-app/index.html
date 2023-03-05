@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -17,40 +21,41 @@
         <div class="tabContainer">
             <p class="tab1">Your Weather</p>
             <p class="tab2">Search weather</p>
+        </div>
 
             <div class="weatherContainer">
 
                 <!-- grant location -->
-                <div class="grantLocation">
+                <div class="grantLocation subContainer">
                     <img src="./assets/location.png" width="80" height="80" alt="" loading="lazy">
-                    <p>Grant Locaiton Access</p>
+                    <h2>Grant Locaiton Access</h2>
                     <p>Allow Access to get weather information</p>
                     <button class="btn">Grant Access</button>
                 </div>
 
                 <!-- search form -->
                 <form class="formContainer">
-                    <input type="text" placeholder="Search for city....">
-                    <button class="btn">
-                        <img src="./assets/search.png" width="20" height="20" alt="" loading="lazy">
+                    <input class="dataSearchInput" type="text" placeholder="Search for city....">
+                    <button class="btn" type="submit">
+                        <img src="./assets/searchengin.svg" width="20" height="20" alt="" loading="lazy">
                     </button>
                 </form>
 
                 <!-- loading screen container -->
-                <div class="loadingContainer">
+                <div class="loadingContainer subContainer">
                     <img src="./assets/loading.gif" alt="" height="150" width="150">
                     <p>Loading...</p>
                 </div>
 
                 <!-- weather information UI -->
-                <div class="weatherinfo">
+                <div class="weatherInfo subContainer">
                     <div class="name">
                         <p class="cityName"></p>
                         <img class="countryIcon">
                     </div>
 
                     <!-- city name and flag -->
-                    <p class="weaterDesc"></p>
+                    <p class="weatherDesc"></p>
                     <!-- weather icon -->
                     <img class="weatherIcon">
                     <!-- temperature -->
@@ -69,7 +74,7 @@
                         <div class="parameter">
                             <img src="./assets/humidity.png" alt="">
                             <p>humidity</p>
-                            <p> class=dataHumidity</p>
+                            <p class="dataHumidity"></p>
                         </div>
 
                         <!-- card3 -->
@@ -82,7 +87,6 @@
                 </div>
 
             </div>
-        </div>
 
     </div>
 
