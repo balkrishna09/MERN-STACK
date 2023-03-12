@@ -12,3 +12,5 @@ https://balkrishna09.github.io/MERN-STACK/card/
 https://balkrishna09.github.io/MERN-STACK/AnimatedButton/
 
 https://balkrishna09.github.io/MERN-STACK/passwordGenerator/
+
+https://balkrishna09.github.io/MERN-STACK/weather-app/
