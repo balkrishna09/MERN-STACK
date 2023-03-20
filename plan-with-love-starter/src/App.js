@@ -6,11 +6,26 @@ import Tours from "./components/Tours";
 const App = () => {
 
   const [tours,setTours] = useState(data);
+
+  function removeTour(id){
+    const newTours = tours.filter(t => t.id !== id);
+    setTours(newTours);
+  }
+
+  if(tours.length===0){
+    return (
+    <div className="refresh">
+        <h2>
+          No tours found  
+        </h2>
+        <button onClick={()=>setTours(data)} className="btn-white">refresh</button>
+    </div>
+    );
+  }
   
   return(
-  <div>
-    <h2> Plan with Love</h2>
-    <Tours tours={tours}></Tours>
+  <div className="App">
+    <Tours tours={tours} removeTour={removeTour}></Tours>
   </div>
   )
 };
