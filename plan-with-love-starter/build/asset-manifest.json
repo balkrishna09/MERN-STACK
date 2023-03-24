@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/MERN-STACK/static/css/main.56bd4087.css",
+    "main.js": "/MERN-STACK/static/js/main.2407ae00.js",
+    "index.html": "/MERN-STACK/index.html",
+    "main.56bd4087.css.map": "/MERN-STACK/static/css/main.56bd4087.css.map",
+    "main.2407ae00.js.map": "/MERN-STACK/static/js/main.2407ae00.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.56bd4087.css",
+    "static/js/main.2407ae00.js"
+  ]
+}
