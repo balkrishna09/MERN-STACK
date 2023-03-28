@@ -7,7 +7,7 @@ function Spinner(){
             <div className="spinner ">
 
             </div>
-            <p>Loading...</p>
+            <p className="text-white text-3xl font-bold">Loading...</p>
         </div>
     )
 }

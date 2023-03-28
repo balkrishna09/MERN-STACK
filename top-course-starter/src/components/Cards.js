@@ -20,8 +20,8 @@ function Cards({courses}){
             getCourses().map((course)=>(
                 <Card key={course.id} 
                     course={course}
-                    likedcourse={likedCourses}
-                    setLikedCourse={setLikedCourses}
+                    likedCourses={likedCourses}
+                    setLikedCourses={setLikedCourses}
                 />
             ))
             }
