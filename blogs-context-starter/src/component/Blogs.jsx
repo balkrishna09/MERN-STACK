@@ -6,7 +6,6 @@ import Spinner from './Spinner';
 function Blogs() {
     //consume context
     const {loading,post} = useContext(AppContext);
-    console.log(post)
   return (
     <div className='w-11/12 max-w-[630px] pt-20 pb-20'>
         {
