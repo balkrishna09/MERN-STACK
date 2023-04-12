@@ -3,7 +3,7 @@
 
 
 
-function Card({post}) {
+function BlogDetails({post}) {
     // const {post} = useContext(AppContext)
 
   return (
@@ -29,4 +29,4 @@ function Card({post}) {
   )
 }
 
-export default Card
+export default BlogDetails
