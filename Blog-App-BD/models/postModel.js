@@ -1,7 +1,6 @@
 //import mongoose
 const mongoose = require("mongoose");
 
-
 //route handler
 const postSchema = new mongoose.Schema({
     title:{
@@ -21,12 +20,5 @@ const postSchema = new mongoose.Schema({
         ref:"Comment"
     }]
 })
-
-
-
-
-
-
-
 //export 
 module.exports = mongoose.model("Post",postSchema);
